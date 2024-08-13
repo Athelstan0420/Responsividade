@@ -1,0 +1,59 @@
+* {  /*O asterico adicona uma propriedade global(PARA TODOS)*/
+    box-sizing: border-box; /*Estende a borda da tag até o limite*/
+}
+#cabecalho {
+    text-align: center;
+    background-color: darkgray;
+    padding: 15px; /*Espaçamento interno da caixa*/
+    width: 100%;
+}
+#contanier {
+    overflow: auto; /*Propriedade para adicionar a barra de rolagem*/
+
+}
+.menu-esq {
+    float: left; /*Flutua o texto a esquerda*/ 
+    width: 20%; /*Largura/Comprimento*/
+    text-align: center;
+}
+.menu-esq a {
+    background-color: darkgrey;
+    display: block; /*Mostrar*/
+    margin-top: 20px; /*Margem no topo*/
+    padding: 8px; /*Espaçamento interno da caixa*/
+    color: black;
+}
+.principal {
+    text-align: center;
+    width: 60%;
+    float: left;
+    margin-top: 20px; /*Margem no topo*/
+    padding: 0, 20px; /*Zero em cima e embaixo e 20px nas laterais*/
+}
+.menu-dir {
+    width: 20%;
+    text-align: center;
+    float: left;
+    margin-top: 45px; /*Margem no topo*/
+    background-color: darkgray;
+    padding: 20px;
+}
+#rodape {
+    width: 100%;
+    text-align: center;
+    background-color: darkgray;
+    padding: 15px; /*Espaçamento interno da caixa*/
+}
+
+/*Para mudar a dimensão em dispositivos móveis*/
+@media only screen and (max-width: 620px){
+    .menu-esq .principal .menu-dir {
+        width: 100%;
+    }
+} /*Anotações(é como se fosse um chamado de biblioteca); only = Apenas*/
+
+/*
+Pra ID você utiliza: # ;
+Pra todos você utiliza: * ;
+Pra chamar a classe utiliza: . ;
+*/
